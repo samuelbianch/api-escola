@@ -5,6 +5,7 @@ class Alunos(admin.ModelAdmin):
     list_display = ('id', 'nome', 'cpf', 'rg', 'data_nascimento')
     list_display_links = ('id', 'nome')
     search_fields = ('nome',)
+    list_per_page = 15
 
 class Cursos(admin.ModelAdmin):
     list_display = ('id', 'codigo', 'nome', 'nivel')
